@@ -160,15 +160,15 @@
         <div id="page-wrapper"class="panel" style="background-color:#f8f8f8">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="row" style="padding-top:30px" align="center">Facility Management</h2>
+                    <h2 class="row" style="padding-top:30px" align="center">Equipment Management</h2>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
             <!-- /.row -->
   <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#faciBook" style="color:#095464">Facility Booking</a></li>
-    <li><a data-toggle="tab" href="#reporting" style="color:#095464">Facility Reporting</a></li>
+    <li class="active"><a data-toggle="tab" href="#faciBook" style="color:#095464">Equipment Booking</a></li>
+    <li><a data-toggle="tab" href="#reportingE" style="color:#095464">Equipment Reporting</a></li>
   </ul>
 
 
@@ -182,7 +182,8 @@
           <h3 class="page-header">Facility Booking System</h3>
           <!-- Insert image here-->
           
-          <form class="form-vertical" role="form" action = "facilityResult">
+          
+          <form class="form-vertical" role="form" action="equipmentResult">
             <!-- Date of Booking -->
             <!-- Put a date time picker -->
             <div class="form-group">
@@ -214,11 +215,10 @@
               </div>
             </div>
 
-            <!-- Capacity -->
             <div class="form-group">
-              <label class="col-sm-2 control-label">Capacity</label>
+              <label class="col-sm-2 control-label">Quantity</label>
               <div class="col-sm-4">
-                <input type="string" id="input_capacity_min" class="form-control" >
+                <input type="string" id="numSession" class="form-control">
               </div>
             </div>
 
@@ -282,13 +282,13 @@
             <!-- Facility Type -->
             <!-- Get Facility List from DB and drop down List -->
             <div class="form-group">
-              <label class="col-sm-2 control-label">Facility Type</label>
+              <label class="col-sm-2 control-label">Equipment Type</label>
               <div class="col-sm-4">
                 <select class="form-control" name="facilityType" id="facType">
-                  <option value="">-- Select a Facility --</option>
-                  <option value="classRm">Class Room</option>
-                  <option value="trainingRm">Training Room</option>
-                  <option value="meetingRm">Meeting Room</option>
+                  <option value="">-- Select a Equipment --</option>
+                  <option value="classRm">Steel Cutter</option>
+                  <option value="trainingRm">Fin Plate</option>
+                  <option value="meetingRm">Metal Decking</option>
                 </select>
               </div>
             </div>
@@ -296,27 +296,24 @@
             <!-- Facility  -->
             <!--  Based on Facility Type -> get Facility List from DB and drop down List -->
             <div class="form-group">
-              <label class="col-sm-2 control-label">Facility</label>
+              <label class="col-sm-2 control-label">Equipment</label>
               <div class="col-sm-4">
-                <select class="form-control" name="facility" id="fac">
-                  <option value="default">-- Select a Facility --</option>
-                  <option value="classRm">Class Room 1</option>
-                  <option value="classRm2">Class Room 2</option>
+                <select class="form-control" name="equip" id="equip">
+                  <option value="default">-- Select a Equipment --</option>
+                  <option value="classRm">Steel Cutter 01</option>
+                  <option value="classRm2">Steel Cutter 02</option>
                 </select>
               </div>
             </div>
             <!--<h4>Search Result display</h4>-->
             <!--javascript to capture time, similar to oasis?-->
 
-          <div class="form-group">     
-            <div class="col-xs-2">
+    <div class="form-group">     
+            <div class="col-xs-12">
               <!-- Might use javascript over here cause the courses shouldnt be the same -->
               <!-- back to homepage? -->
-              <button type="button" class="btn pull-left btn-success" href="index.html">Back</button>
-            </div>
-
-            <div class="col-sm-10">
-              <button type="button" class="btn btn-default" onclick="document.location.href='facilityResult.html'" style="float:right;">Search</button>
+              <button type="button" class="btn pull-left btn-success" href="index.html" style="margin-top:50px">Back</button>
+              <button type="button" class="btn btn-default" onclick="document.location.href='equipmentResult.html'" style="float:right;">Search</button>
             </div>
           </div>
           <!-- To make the white background cover all fields -->
@@ -335,13 +332,13 @@
         </div>
       </div>
 
-      <div id="reporting" class="tab-pane fade">
-<div class="row">
-      <div class="col-xs-12">
+      <div id="reportingE" class="tab-pane fade">
+        <div class="row">
+      <div class="col-xs-12 col-sm-12">
     <table class="table table-striped">
       <thead>
         <tr>
-          <th>Facility</th>
+          <th>Equipment</th>
           <th>Report Fault</th>
           <th>Comments</th>
         </tr>
@@ -350,81 +347,77 @@
         <tr>
           <td>
             <div class="radio">
-              <label>Classroom 1.1 (CR1.1)</label>
-            </div>
-          </td>
-          <td>
-            <a href="reportFacilityFault.html" role="button" class="btn btn-warning btn-block"> Report Fault</a>
-          </td>
-          <td>NA</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="radio">
-              <label>Classroom 1.2 (CR1.2)</label>
-            </div>
-          </td>
-          <td>
-            <a href="reportFacilityFault.html" role="button" class="btn btn-warning btn-block"> Report Fault</a>
-          </td>
-          <td>NA</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="radio">
-              <label>Classroom 2.1 (CR2.1)</label>
-            </div>
-          </td>
-          <td>
-            <a href="/reportFacilityFault.html" role="button" class="btn btn-warning btn-block"> Report Fault</a>
-          </td>
-          <td>NA</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="radio">
-              <label>Classroom 2.2 (CR2.2)</label>
-            </div>
-          </td>
-          <td>
-            <a href="/reportFacilityFault.html" role="button" class="btn btn-warning btn-block"> Report Fault</a>
-          </td>
-          <td>NA</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="radio">
-              <label>Classroom 2.3 (CR2.3)</label>
-            </div>
-          </td>
-          <td>
-            <a href="/reportFacilityFault.html" role="button" class="btn btn-warning btn-block"> Report Fault</a>
-          </td>
-          <td>NA</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="radio">
-              <label>Classroom 3.1 (CR3.1)</label>
+              <label>Steel Cutter 01 (SC01)</label>
             </div>
           </td>
           <td>
             Faulty
           </td>
-          <td>Lights are unable to be turned on.</td>
+          <td>Lever is not functioning properly</td>
         </tr>
-      </tbody>
-    </table>
+        <tr>
+          <td>
+            <div class="radio">
+              <label>Steel Cutter 02 (SC02)</label>
+            </div>
+          </td>
+          <td>
+            <a href="reportequipmentfault" role="button" class="btn btn-warning btn-block"> Report Fault</a>
+          </td>
+          <td>NA</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="radio">
+              <label>Steel Cutter 03 (SC03)</label>
+            </div>
+          </td>
+          <td>
+            <a href="reportequipmentfault" role="button" class="btn btn-warning btn-block"> Report Fault</a>
+          </td>
+          <td>NA</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="radio">
+              <label>Fin Plate 01 (FP01)</label>
+            </div>
+          </td>
+          <td>
+            <a href="reportequipmentfault" role="button" class="btn btn-warning btn-block"> Report Fault</a>
+          </td>
+          <td>NA</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="radio">
+              <label>Fin Plate 02 (FP02)</label>
+            </div>
+          </td>
+          <td>
+            <a href="reportequipmentfault" role="button" class="btn btn-warning btn-block"> Report Fault</a>
+          </td>
+          <td>NA</td>
+        </tr>
+                <tr>
+                  <td>
+                    <div class="radio">
+                      <label>Fin Plate 03 (FP03)</label>
+                    </div>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Report Fault</button>
+                  </td>
+                  <td>NA</td>
+                </tr>
+              </tbody>
+            </table>
 
 
 
-
-
-
-      
-    </div>
-    </div>
-    </div>
+          </div>
+        </div>
+      </div>
 
     
     

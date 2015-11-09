@@ -160,76 +160,176 @@
         <div id="page-wrapper"class="panel" style="background-color:#f8f8f8">
             <div class="row">
                 <div class="col-lg-12">
-                    <h3 class="row" style="padding-top:30px" align="center" >Class List</h3>
+                    <h2 class="row" style="padding-top:30px" align="center">Facility Management</h2>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
-
             <!-- /.row -->
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#faciBook" style="color:#095464">Facility Booking</a></li>
+    <li><a data-toggle="tab" href="#reporting" style="color:#095464">Facility Reporting</a></li>
+  </ul>
+
+
+  <div class="tab-content">
+    <div id="faciBook" class="tab-pane fade in active">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <!--<div class="box">
             <div class="row">
+              <div class="box-content">-->
+                <h3 class="page-header">Facility Booking System</h3>
+                <!-- Insert image here-->
 
-               
-              <div class="col-xs-12">
-                <table class="table table-hover">
-                  <thead>
-                        <tr>
-                          <th>Course Name</th>
-                          <th>Class</th>
-                          <th>Venue</th>
-                          <th>Time</th>
-                          <th>Trainer</th>
-                          <th>Equipment</th>
-                          <th>Navigate</th>
-                      </tr>
-                    </thead>
-                <tbody>
-                    <tr>
-                        <td>Workplace Health and Safety</td>
-                        <td> G2</td>
-                        <td> CR 2.1 </td>
-                        <td>09:00am - 12:00pm </td>                 
-                        <td>Benjamin Lim</td>
-                        <td>Steel Cutter SC02</td>
-                        <td><button type="button" class="btn btn-default" onclick="document.location.href='classPage.html'">Go to Class</button></td>         
-                    </tr>
-                    <tr>
-                        <td>Workplace Literacy and Numeracy Fundamentals </td>
-                        <td>G1</td>
-                        <td>CR 2.1</td>
-                        <td>01:00pm - 05:00pm </td>
-                        <td> Tan Chuan</td>
-                        <td>No Equipment</td>
-                        <td><button type="button" class="btn btn-default" onclick="document.location.href='classPage.html'">Go to Class</button></td>          
-                    </tr>
-                    <tr>
-                      <td>Strategic Business Planning for Training Organizations (SBPTO)</td>
-                        <td>G4</td>
-                        <td>CR 1.1</td>
-                        <td>01:00pm - 05:00pm</td>
-                        <td>Chris Ong</td>
-                        <td>No Equipment</td>
-                        <td><button type="button" class="btn btn-default" onclick="document.location.href='classPage.html'">Go To Class</button></td>           
-                    </tr>
-                    </tbody>
-                    </table>
-
-
-
-
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <i class="fa fa-list fa-fw"></i> Booking Confirmation
+                      </div>
+                      <!-- /.panel-heading -->
+                      <div class="panel-body">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="table-responsive">
+                              <table class="table table-bordered table-hover table-striped">
+                                <thead>
+                                  <tr>
+                                    <th>Facility</th>
+                                    <th>Start Time</th>
+                                    <th>End Time</th>
+                                    <th>Date</th>
+                                    <th>Course</th>
+                                    <th>Class Name</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>CR 2.3</td>
+                                    <td>01:00pm</td>
+                                    <td>05:00pm</td>
+                                    <td>14 Oct 2015</td>
+                                    <td>WHS</td>
+                                    <td>G2</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+
+     </div>    
+      <div class="col-xs-2">
+        <!-- Might use javascript over here cause the courses shouldnt be the same -->
+        <!-- back to homepage? -->
+        <a href="/" class="btn pull-left btn-success active" role="button">Back</a>
+      </div>
+
+      <div class="col-sm-6">
+        <a href="facilityBooking.html" class="btn pull-right btn-primary" role="button">Confirm</a>
+      </div>
+
+  </div>
+
+
+      <div id="reporting" class="tab-pane fade">
+<div class="row">
+      <div class="col-xs-12">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Facility</th>
+          <th>Report Fault</th>
+          <th>Comments</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="radio">
+              <label>Classroom 1.1 (CR1.1)</label>
             </div>
-
-
-
-
-                <!-- /.col-lg-4 -->
+          </td>
+          <td>
+            <a href="reportFacilityFault.html" role="button" class="btn btn-warning btn-block"> Report Fault</a>
+          </td>
+          <td>NA</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="radio">
+              <label>Classroom 1.2 (CR1.2)</label>
             </div>
-            <!-- /.row -->
-        </div>
-        <!-- /#page-wrapper -->
+          </td>
+          <td>
+            <a href="reportFacilityFault.html" role="button" class="btn btn-warning btn-block"> Report Fault</a>
+          </td>
+          <td>NA</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="radio">
+              <label>Classroom 2.1 (CR2.1)</label>
+            </div>
+          </td>
+          <td>
+            <a href="/reportFacilityFault.html" role="button" class="btn btn-warning btn-block"> Report Fault</a>
+          </td>
+          <td>NA</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="radio">
+              <label>Classroom 2.2 (CR2.2)</label>
+            </div>
+          </td>
+          <td>
+            <a href="/reportFacilityFault.html" role="button" class="btn btn-warning btn-block"> Report Fault</a>
+          </td>
+          <td>NA</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="radio">
+              <label>Classroom 2.3 (CR2.3)</label>
+            </div>
+          </td>
+          <td>
+            <a href="/reportFacilityFault.html" role="button" class="btn btn-warning btn-block"> Report Fault</a>
+          </td>
+          <td>NA</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="radio">
+              <label>Classroom 3.1 (CR3.1)</label>
+            </div>
+          </td>
+          <td>
+            Faulty
+          </td>
+          <td>Lights are unable to be turned on.</td>
+        </tr>
+      </tbody>
+    </table>
 
+
+
+
+
+
+      
     </div>
+    </div>
+    </div>
+
+    
+    
     <!-- /#wrapper -->
 
     <!-- jQuery -->
