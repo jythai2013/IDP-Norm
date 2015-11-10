@@ -43,7 +43,7 @@
     <div id="wrapper">
 
         <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <nav class="navbar navbar-inverse navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -51,14 +51,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Sterling Training Hub</a>
+                <a class="navbar-brand" href="admin.html">
+                        <i class="fa fa-play-circle"></i>  <span class="light">STERLING Training</span> 
+                    </a>
             </div>
             <!-- /.navbar-header -->
 
             <ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                        <i class="fa fa-bell fa-fw" style="color:#42dca3"></i>  <i class="fa fa-caret-down" style="color:#42dca3"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-alerts">
                         <li>
@@ -117,16 +119,16 @@
                 </li>
                 <!-- /.dropdown -->
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i> Welcome, Marc Sim <i class="fa fa-caret-down"></i>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:#42dca3">
+                        <i class="fa fa-user fa-fw" style="color:#42dca3"></i> Welcome, Marc Sim <i class="fa fa-caret-down" style="color:#42dca3"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        <li><a href="#" ><i class="fa fa-user fa-fw" ></i> User Profile</a>
                         </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        <li><a href="#" ><i class="fa fa-gear fa-fw" ></i> Settings</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="login.html" ><i class="fa fa-sign-out fa-fw" ></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -135,20 +137,20 @@
             </ul>
             <!-- /.navbar-top-links -->
 
-            <div class="navbar-default sidebar" role="navigation">
+            <div class="navbar-default sidebar" role="navigation" style="background-color:#333333">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="index.html" style="color:#f8f8f8"><i class="fa fa-dashboard fa-fw" style="color:#f8f8f8"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a href="facilityBooking.html"><i class="fa fa-bar-chart-o fa-fw"></i> Facility</a>
+                            <a href="facilityBooking.html" style="color:#f8f8f8"><i class="fa fa-bar-chart-o fa-fw" style="color:#f8f8f8"></i> Facility</a>
                         </li>
                         <li>
-                            <a href="equipmentBooking.html"><i class="fa fa-table fa-fw"></i> Equipment</a>
+                            <a href="equipmentBooking.html" style="color:#f8f8f8"><i class="fa fa-table fa-fw" style="color:#f8f8f8"></i> Equipment</a>
                         </li>
                         <li>
-                            <a href="classList.html"><i class="fa fa-edit fa-fw"></i> Class List</a>
+                            <a href="classList.html" style="color:#f8f8f8"><i class="fa fa-edit fa-fw" style="color:#f8f8f8"></i> Class List</a>
                         </li>
                     </ul>
                 </div>
@@ -198,55 +200,34 @@
                             <div class="list-group">
 
                                 <div class="form-group">
-                                  <label for="comment">Message:</label>
+                                  <label for="comment">To-Do:</label>
                                   <input type="string" id="numSession" class="form-control">
                                 </div>
                                 <a href="#" class="list-group-item">
                                     <input type="checkbox" class="toggle-checked" />
-                                    <span class="text">Check CR 2.1</span> 
-                                    <button class="delete">&times;</button>
+                                    <span class="text">Inspect CR 2.1</span> 
+                                    <button class="delete pull-right">&times;</button>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                    <span class="pull-right text-muted small"><em>12 minutes ago</em>
-                                    </span>
+                                    <input type="checkbox" class="toggle-checked" />
+                                    <span class="text">Inspect SC 02</span> 
+                                    <button class="delete pull-right">&times;</button>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
-                                    <span class="pull-right text-muted small"><em>27 minutes ago</em>
-                                    </span>
+                                    <input type="checkbox" class="toggle-checked" />
+                                    <span class="text">Print materials for WHS G2</span> 
+                                    <button class="delete pull-right">&times;</button>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-tasks fa-fw"></i> New Task
-                                    <span class="pull-right text-muted small"><em>43 minutes ago</em>
-                                    </span>
+                                    <input type="checkbox" class="toggle-checked" />
+                                    <span class="text">Schedule next month's classes</span> 
+                                    <button class="delete pull-right">&times;</button>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                    <span class="pull-right text-muted small"><em>11:32 AM</em>
-                                    </span>
+                                    <input type="checkbox" class="toggle-checked" />
+                                    <span class="text">Check CR 1.2</span> 
+                                    <button class="delete pull-right">&times;</button>
                                 </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-bolt fa-fw"></i> Server Crashed!
-                                    <span class="pull-right text-muted small"><em>11:13 AM</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-warning fa-fw"></i> Server Not Responding
-                                    <span class="pull-right text-muted small"><em>10:57 AM</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-shopping-cart fa-fw"></i> New Order Placed
-                                    <span class="pull-right text-muted small"><em>9:49 AM</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-money fa-fw"></i> Payment Received
-                                    <span class="pull-right text-muted small"><em>Yesterday</em>
-                                    </span>
-                                </a>
-                            </div>
                             <!-- /.list-group -->
                             <a href="#" class="btn btn-default btn-block">View All Alerts</a>
                         </div>
