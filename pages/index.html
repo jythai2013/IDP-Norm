@@ -28,195 +28,196 @@
 
     <!-- Custom Fonts -->
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-		
-		<!--
-// http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js-->
-		<!-- Calendar Jazz-->
-		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script src="http://qtip2.com/v/stable/jquery.qtip.js"></script>
-		<link href="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css" rel="stylesheet" type="text/css">
-		<script src='http://fullcalendar.io/js/fullcalendar-2.1.1/lib/moment.min.js'></script>
-		<script src="http://fullcalendar.io/js/fullcalendar-2.1.1/lib/jquery-ui.custom.min.js"></script>
-		<script src="../js/fullcalendar.js"></script>
-		<link href="../css/fullcalendar.min.css" rel="stylesheet" type="text/css">
-		<link href="../css/fullcalendar.print.css" rel="stylesheet" type="text/css">
-		<script src="../js/calendar.js"></script>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--
+        // http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js-->
+        <!-- Calendar Jazz-->
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="http://qtip2.com/v/stable/jquery.qtip.js"></script>
+        <link href="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css" rel="stylesheet" type="text/css">
+        <script src='http://fullcalendar.io/js/fullcalendar-2.1.1/lib/moment.min.js'></script>
+        <script src="http://fullcalendar.io/js/fullcalendar-2.1.1/lib/jquery-ui.custom.min.js"></script>
+        <script src="../js/fullcalendar.js"></script>
+        <link href="../css/fullcalendar.min.css" rel="stylesheet" type="text/css">
+        <link href="../css/fullcalendar.print.css" rel="stylesheet" type="text/css">
+        <script src="../js/calendar.js"></script>
+
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <![endif]-->
 
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <div id="wrapper">
+        <div id="wrapper">
 
-        <!-- Navigation -->
-        <nav class="navbar navbar-inverse navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="admin.html">
+            <!-- Navigation -->
+            <nav class="navbar navbar-inverse navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="admin.html">
                         <i class="fa fa-play-circle"></i>  <span class="light">STERLING Training</span> 
                     </a>
-            </div>
-            <!-- /.navbar-header -->
-
-            <ul class="nav navbar-top-links navbar-right">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-bell fa-fw" style="color:#42dca3"></i>  <i class="fa fa-caret-down" style="color:#42dca3"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-alerts">
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-comment fa-fw"></i> New Comment
-                                    <span class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                    <span class="pull-right text-muted small">12 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
-                                    <span class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-tasks fa-fw"></i> New Task
-                                    <span class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                    <span class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a class="text-center" href="#">
-                                <strong>See All Alerts</strong>
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-alerts -->
-                </li>
-                <!-- /.dropdown -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:#42dca3">
-                        <i class="fa fa-user fa-fw" style="color:#42dca3"></i> Welcome, Marc Sim <i class="fa fa-caret-down" style="color:#42dca3"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#" ><i class="fa fa-user fa-fw" ></i> User Profile</a>
-                        </li>
-                        <li><a href="#" ><i class="fa fa-gear fa-fw" ></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href="login.html" ><i class="fa fa-sign-out fa-fw" ></i> Logout</a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-user -->
-                </li>
-                <!-- /.dropdown -->
-            </ul>
-            <!-- /.navbar-top-links -->
-
-            <div class="navbar-default sidebar" role="navigation" style="background-color:#333333">
-                <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
-                        <li>
-                            <a href="index.html" style="color:#f8f8f8"><i class="fa fa-dashboard fa-fw" style="color:#f8f8f8"></i> Dashboard</a>
-                        </li>
-                        <li>
-                            <a href="facilityBooking.html" style="color:#f8f8f8"><i class="fa fa-bar-chart-o fa-fw" style="color:#f8f8f8"></i> Facility</a>
-                        </li>
-                        <li>
-                            <a href="equipmentBooking.html" style="color:#f8f8f8"><i class="fa fa-table fa-fw" style="color:#f8f8f8"></i> Equipment</a>
-                        </li>
-                        <li>
-                            <a href="classList.html" style="color:#f8f8f8"><i class="fa fa-edit fa-fw" style="color:#f8f8f8"></i> Class List</a>
-                        </li>
-                    </ul>
                 </div>
-                <!-- /.sidebar-collapse -->
-            </div>
-            <!-- /.navbar-static-side -->
-        </nav>
+                <!-- /.navbar-header -->
 
-        <div id="page-wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Dashboard</h1>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-bell fa-fw" style="color:#42dca3"></i>  <i class="fa fa-caret-down" style="color:#42dca3"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-alerts">
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-comment fa-fw"></i> New Comment
+                                        <span class="pull-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                        <span class="pull-right text-muted small">12 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                        <span class="pull-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-tasks fa-fw"></i> New Task
+                                        <span class="pull-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                        <span class="pull-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a class="text-center" href="#">
+                                    <strong>See All Alerts</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-alerts -->
+                    </li>
+                    <!-- /.dropdown -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:#42dca3">
+                            <i class="fa fa-user fa-fw" style="color:#42dca3"></i> Welcome, Marc Sim <i class="fa fa-caret-down" style="color:#42dca3"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="#" ><i class="fa fa-user fa-fw" ></i> User Profile</a>
+                            </li>
+                            <li><a href="#" ><i class="fa fa-gear fa-fw" ></i> Settings</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="login.html" ><i class="fa fa-sign-out fa-fw" ></i> Logout</a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-user -->
+                    </li>
+                    <!-- /.dropdown -->
+                </ul>
+                <!-- /.navbar-top-links -->
+
+                <div class="navbar-default sidebar" role="navigation" style="background-color:#333333">
+                    <div class="sidebar-nav navbar-collapse">
+                        <ul class="nav" id="side-menu">
+                            <li>
+                                <a href="index.html" style="color:#f8f8f8"><i class="fa fa-dashboard fa-fw" style="color:#f8f8f8"></i> Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="facilityBooking.html" style="color:#f8f8f8"><i class="fa fa-bar-chart-o fa-fw" style="color:#f8f8f8"></i> Facility</a>
+                            </li>
+                            <li>
+                                <a href="equipmentBooking.html" style="color:#f8f8f8"><i class="fa fa-table fa-fw" style="color:#f8f8f8"></i> Equipment</a>
+                            </li>
+<!--                             <li>
+                                <a href="classList.html" style="color:#f8f8f8"><i class="fa fa-edit fa-fw" style="color:#f8f8f8"></i> Class List</a>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <!-- /.sidebar-collapse -->
                 </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
+                <!-- /.navbar-static-side -->
+            </nav>
 
-            <!-- /.row -->
-            <div class="row">
-                <!-- /.col-lg-8 -->
+            <div id="page-wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">Dashboard</h1>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /.row -->
 
-                <div class="col-lg-8">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-list fa-fw"></i> Today's Class Schedule
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-lg-12">
+                <!-- /.row -->
+                <div class="row">
+                    <!-- /.col-lg-8 -->
+
+                    <div class="col-lg-8">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <i class="fa fa-list fa-fw"></i> Today's Class Schedule
+                            </div>
+                            <!-- /.panel-heading -->
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-lg-12">
 
                                         <div id="fullCalendarDiv"></div>
-
-                                </div> 
+                                        <!-- <div class="span4 proj-div" data-toggle="modal" data-target="#GSCCModal">Clickable content, graphics, whatever</div> -->
+                                    </div> 
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-bell fa-fw"></i> Notifications Panel
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="list-group">
+                    <div class="col-lg-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <i class="fa fa-bell fa-fw"></i> Notifications Panel
+                            </div>
+                            <!-- /.panel-heading -->
+                            <div class="panel-body">
+                                <div class="list-group">
 
-                                <div class="form-group">
-                                  <label for="comment">To-Do:</label>
-                                  <input type="string" id="numSession" class="form-control">
-                                </div>
-                                <a href="#" class="list-group-item">
+                                    <div class="form-group">
+                                      <label for="comment">To-Do:</label>
+                                      <input type="string" id="numSession" class="form-control">
+                                  </div>
+                                  <a href="#" class="list-group-item">
                                     <input type="checkbox" class="toggle-checked" />
                                     <span class="text">Inspect CR 2.1</span> 
                                     <button class="delete pull-right">&times;</button>
@@ -241,40 +242,85 @@
                                     <span class="text">Check CR 1.2</span> 
                                     <button class="delete pull-right">&times;</button>
                                 </a>
-                            <!-- /.list-group -->
-                            <a href="#" class="btn btn-default btn-block">View All Alerts</a>
+                                <!-- /.list-group -->
+                                <a href="#" class="btn btn-default btn-block">View All Alerts</a>
+                            </div>
+                            <!-- /.panel-body -->
                         </div>
-                        <!-- /.panel-body -->
+                        <!-- /.panel -->
+                        <!-- /.panel -->
+                        <!-- /.panel .chat-panel -->
                     </div>
-                    <!-- /.panel -->
-                    <!-- /.panel -->
-                    <!-- /.panel .chat-panel -->
+                    <!-- /.col-lg-4 -->
                 </div>
-                <!-- /.col-lg-4 -->
+                <!-- /.row -->
             </div>
-            <!-- /.row -->
+            <!-- /#page-wrapper -->
+<!--             <div id="GSCCModal" class="modal fade" aria-labelledby="myModalLabel" aria-hidden="true">
+             <div class="modal-dialog">
+                <div class="modal-content">
+               <div class="modal-header">
+                    <h4 class="modal-title">Workplace Health and Safety</h4>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Course: Workplace Health and Safety</li>
+                        <li>Class: G2</li>
+                        <li>Venue: CR 2.1</li>
+                        <li>Trainer: Benjamin Lim </li>
+                        <li>Equipment: Steel Cutter SC02 </li>
+                    </ul>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" onclick="document.location.href='../classHomepage'" data-dismiss="modal">Go to Class Page</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
-        <!-- /#page-wrapper -->
+    </div> -->
 
+<div id="fullCalModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span> <span class="sr-only">close</span></button>
+                <h4 id="modalTitle" class="modal-title"></h4>
+            </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Course: Workplace Health and Safety</li>
+                        <li>Class: G2</li>
+                        <li>Venue: CR 2.1</li>
+                        <li>Trainer: Benjamin Lim </li>
+                        <li>Equipment: Steel Cutter SC02 </li>
+                    </ul>
+                </div>
+            <div class="modal-footer">
+                    <button type="button" class="btn btn-default" onclick="document.location.href='classPage.html'" data-dismiss="modal">Go to Class Page</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
     </div>
-    <!-- /#wrapper -->
+</div>
+</div>
+<!-- /#wrapper -->
 
-    <!-- jQuery -->
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <!-- Morris Charts JavaScript -->
-    <script src="../bower_components/raphael/raphael-min.js"></script>
-    <script src="../bower_components/morrisjs/morris.min.js"></script>
-    <script src="../js/morris-data.js"></script>
+<!-- Metis Menu Plugin JavaScript -->
+<script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="../dist/js/sb-admin-2.js"></script>
+<!-- Morris Charts JavaScript -->
+<script src="../bower_components/raphael/raphael-min.js"></script>
+<script src="../bower_components/morrisjs/morris.min.js"></script>
+<script src="../js/morris-data.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="../dist/js/sb-admin-2.js"></script>
 
 </body>
 
